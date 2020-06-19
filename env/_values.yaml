@@ -22,7 +22,7 @@ nginxIngressAlbBinding:
 # More details on: 
 # https://github.com/helm/charts/blob/master/incubator/aws-alb-ingress-controller/values.yaml
 alb:
-  nameOverride: alb
+  nameOverride: alb-ingress-controller
   clusterName: 'datalake-dev'
   awsRegion: "ap-southeast-2"
   autoDiscoverAwsRegion: false

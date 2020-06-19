@@ -3,7 +3,7 @@ DIR := "env"
 TEST_DIR := "test-manual"
 NAMESPACE := "kube-system-ingress"
 PACKAGE_NAME := "eks-alb-nginx-ingress"
-PACKAGE_VERSION := "0.0.5"
+PACKAGE_VERSION := "0.0.6"
 OS := $(shell uname)
 
 build: clean
@@ -28,8 +28,8 @@ debug:
 package:
 	rm -rf ${PACKAGE_NAME} && mkdir -p ${PACKAGE_NAME}
 	cp -r ${DIR}/* eks-alb-nginx-ingress/
-	sed -i -e "s/name:.*/name: $(PACKAGE_NAME)/" eks-alb-nginx-ingress/Chart.yaml
-	sed -i -e "s/version:.*/version: $(PACKAGE_VERSION)/" eks-alb-nginx-ingress/Chart.yaml
+	sed -i -e "s/^name:.*/name: $(PACKAGE_NAME)/" eks-alb-nginx-ingress/Chart.yaml
+	sed -i -e "s/^version:.*/version: $(PACKAGE_VERSION)/" eks-alb-nginx-ingress/Chart.yaml
 	helm package eks-alb-nginx-ingress
 	helm repo index .
 	rm -rf ${PACKAGE_NAME}
