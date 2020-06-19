@@ -3,7 +3,29 @@ entries:
   eks-alb-nginx-ingress:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-06-19T12:47:18.6158406-04:00"
+    created: "2020-06-19T13:07:24.1784126-04:00"
+    dependencies:
+    - alias: alb
+      name: aws-alb-ingress-controller
+      repository: http://storage.googleapis.com/kubernetes-charts-incubator
+      version: 1.0.0
+    - alias: externaldns
+      name: external-dns
+      repository: http://storage.googleapis.com/kubernetes-charts
+      version: 2.20.4
+    - alias: nginx
+      name: nginx-ingress
+      repository: http://storage.googleapis.com/kubernetes-charts
+      version: 1.40.1
+    description: A Helm chart for Kubernetes
+    digest: a66a167a2ad08e3f0b5b2c92020ab34f3a6f439f3e684687ce00bc8770e32491
+    name: eks-alb-nginx-ingress
+    urls:
+    - eks-alb-nginx-ingress-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-06-19T13:07:24.1664138-04:00"
     dependencies:
     - alias: alb
       name: aws-alb-ingress-controller
@@ -25,7 +47,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-06-19T12:47:18.6018127-04:00"
+    created: "2020-06-19T13:07:24.1534128-04:00"
     dependencies:
     - alias: alb
       name: aws-alb-ingress-controller
@@ -45,4 +67,4 @@ entries:
     urls:
     - eks-alb-nginx-ingress-0.0.1.tgz
     version: 0.0.1
-generated: "2020-06-19T12:47:18.5938174-04:00"
+generated: "2020-06-19T13:07:24.1464027-04:00"
