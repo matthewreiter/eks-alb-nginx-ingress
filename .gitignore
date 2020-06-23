@@ -1,6 +1,3 @@
-#do not commit prod configs by mistake 
-env/values.yaml
-
 incubator/airflow/requirements.lock
 
 # General files for the project
