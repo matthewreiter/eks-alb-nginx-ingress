@@ -19,6 +19,6 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: {{ .Release.Name }}-nginx-controller
+          serviceName: {{ .Release.Name }}-controller
           servicePort: http
 {{- end }}

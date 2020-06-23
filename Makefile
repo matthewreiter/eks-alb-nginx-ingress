@@ -3,7 +3,7 @@ DIR := "env"
 TEST_DIR := "test-manual"
 NAMESPACE := "kube-system-ingress"
 PACKAGE_NAME := "eks-alb-nginx-ingress"
-PACKAGE_VERSION := "0.0.8"
+PACKAGE_VERSION := "0.0.9"
 OS := $(shell uname)
 
 build: clean
