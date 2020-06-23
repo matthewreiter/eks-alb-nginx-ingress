@@ -9,8 +9,8 @@ dependencies:
     repository: http://storage.googleapis.com/kubernetes-charts-incubator
     alias: alb
   - name: external-dns
-    version: 2.20.4
-    repository: http://storage.googleapis.com/kubernetes-charts
+    version: 3.2.1
+    repository: https://charts.bitnami.com/bitnami
     alias: externaldns
   - name: nginx-ingress  
     version: 1.40.1
