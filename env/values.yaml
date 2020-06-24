@@ -94,7 +94,8 @@ nginx:
       # www-data -> uid 33
       runAsUser: 33
 
-    config: {}
+    config:
+      use-forwarded-headers: "true"
     # Will add custom header to Nginx https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/customization/custom-headers
     headers: {}
 
